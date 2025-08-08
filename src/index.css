@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body{@apply bg-slate-100;}
+  footer {@apply bg-slate-900 text-slate-200}
+
+  h1 {@apply text-6xl font-bold tracking-widest leading-snug text-slate-900;}
+  h2 {@apply text-5xl font-bold tracking-wider leading-snug text-slate-900;}
+  h3 {@apply text-4xl font-bold tracking-wider leading-snug text-slate-900;}
+  h4 {@apply text-3xl font-bold tracking-wider leading-snug text-slate-900;}
+  h5 {@apply text-xl tracking-widest text-slate-900;}
+  p {@apply text-base font-light tracking-widest text-slate-900;}
+  small {@apply text-sm font-light tracking-widest ;}
+  a {@apply tracking-widest font-light text-slate-900;}
+    
+}
+
+@layer components {
+  .save-area{
+    @apply px-5 lg:px-20 md:px-10;
+  }
+  .gradient-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-br from-[#00C5E8] to-[#BD5CDB];
+  }
+  .gradient-bg {
+    @apply bg-gradient-to-br from-[#00C5E8] to-[#BD5CDB];
+  }
+
+  .btn-primary {
+    @apply flex items-center justify-between tracking-widest bg-gradient-to-br from-[#00C5E8] to-[#BD5CDB] text-white rounded-full text-center py-4 px-8 relative overflow-hidden;
+}
+  .btn-primary::before {
+    content: "";
+    @apply absolute inset-0 bg-white bg-opacity-20 opacity-0 transition-opacity duration-300 pointer-events-none;
+  }
+  .btn-primary:hover::before {
+    opacity: 1;
+  }
+
+
+  .btn-secondary {
+    @apply flex items-center justify-center transition-colors duration-300 gap-2 tracking-widest rounded-full text-center py-2 px-4 ;
+  }
+
+  
+  .btn-icon{
+    @apply flex items-center justify-center rounded-full text-center h-12 w-12;
+  }
+  /* nav */
+  .nav-btn {
+    @apply flex h-full bg-white rounded-full border border-slate-100 hover:bg-gradient-to-br from-[#00C5E8] to-[#BD5CDB];
+  }
+  .nav-btn.active {
+    box-shadow: 
+    -1px -1px 1px 1px rgba(33, 222, 255, 0.4),
+    1px 1px 1px 1px rgba(225, 125, 255, 0.4);
+  }
+
+  .logo-active {
+    display: none;
+  }
+  .logo.active .logo-nomal {
+    display: none;
+  }
+  .logo.active .logo-active {
+    display: flex;
+  }
+
+  /* checkbox label */
+  /* .checkbox-toggle:checked ~ span:nth-of-type(1) {
+    transform-origin: bottom;
+    transform: rotate(45deg) translate(8px, 0);
+  }
+
+  .checkbox-toggle:checked ~ span:nth-of-type(2) {
+    transform-origin: top;
+    transform: rotate(-45deg);
+  }
+
+  .checkbox-toggle:checked ~ span:nth-of-type(3) {
+    transform-origin: bottom;
+    width: 50%;
+    transform: translate(30px, -11px) rotate(45deg);
+  } */
+
+  /* index.html */
+  .custom-prev, .custom-next {
+    @apply bg-white hover:bg-gradient-to-br from-[#21DEFF] to-[#E17DFF] text-white hover:text-white px-3 py-3 rounded-full;
+  }
+
+  .industry-tab {
+    @apply flex flex-col px-4 h-full justify-center items-center gap-2 bg-white text-zinc-800 rounded-3xl transition-transform duration-300 aspect-square overflow-hidden;
+  }
+  .industry-tab:hover{
+    @apply hover:shadow-lg hover:-translate-y-1;
+  }
+  .industry-tab.focused {
+    box-shadow: 
+    -1px -1px 1px 1px rgba(33, 222, 255, 0.4),
+    1px 1px 1px 1px rgba(225, 125, 255, 0.4);
+  }
+  .industry-tab.hidden{
+    display:none;
+  }
+  .industry-tab img{
+    @apply w-12 h-12;
+  }
+
+  /* about */
+  .milestone-btn {
+    @apply  px-6 py-2 rounded-full mx-2 transition-all duration-300 text-zinc-300 font-mono;
+  }
+  .milestone-btn:hover {
+    @apply  gradient-text;
+  }
+  .milestone-btn.active {
+    @apply  gradient-text;
+  }
+  .milestone-btn.active span {
+    @apply gradient-bg;
+  }
+  .milestone-btn:hover .dot {
+    @apply gradient-bg;
+  }
+  .milestone-btn.active .dot {
+    @apply gradient-bg;
+  }
+
+  /* industries */
+  .industries-tab {
+    @apply flex flex-col px-4 h-full justify-center items-center gap-2 bg-white text-zinc-800 rounded-3xl transition-transform duration-300 aspect-square overflow-hidden;
+  }
+  .industries-tab:hover{
+    @apply hover:shadow-lg hover:-translate-y-1;
+  }
+  .industries-tab.focused {
+    box-shadow: 
+    -1px -1px 1px 1px rgba(33, 222, 255, 0.4),
+    1px 1px 1px 1px rgba(225, 125, 255, 0.4);
+  }
+  .industries-tab.hidden{
+    display:none;
+  }
+  .industries-tab img{
+    @apply w-12 h-12;
+  }
+}
+
+
+/* kv span 閃爍動畫 */
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: rgb(44, 46, 47); }
+}
+
+/* partner 滾動動畫 */
+@keyframes marquee-full {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@layer utilities {
+  .animate-blink {
+    animation: blink 1s steps(1, end) infinite;
+  }
+
+  .animate-marquee {
+    animation: marquee-full 20s linear infinite;
+  }
+
+  /*  */
+  .accordion-transition {
+    transition: max-height 0.3s ease;
+    overflow: hidden;
+  }
+  .accordion-closed {
+    max-height: 0;
+  }
+  .accordion-open {
+    max-height: 500px; /* 根據內容調整 */
+  }
+
+  .unset{
+    top: unset !important;
+    bottom: unset !important;
+    left: unset !important;
+    right: unset !important;
+    width: auto !important;
+    position: unset !important;
+  }
+}

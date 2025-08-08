@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Altron</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./icon/icon-logo-color.svg">
+    <!-- <link rel="stylesheet" href="/src/index.css" /> -->
+    <link rel="stylesheet" href="./dist/tailwind.css">
+
+    <script type="module" src="/src/main.js"></script>
+</head>
+
+<body>
+    <nav id="nav"></nav>
+
+    <section class="h-dvh flex  justify-center items-center text-center">
+        <div class="h-full w-1/2 hidden md:block">
+            <img src="/img/login.jpg" alt="" class="h-full w-full object-cover">
+        </div>
+        
+        <div class="w-1/2 md:p-10 ">
+            <h3 class="py-6">登入</h3>
+
+            <form class="flex flex-col md:gap-8" action="#" method="POST">
+                <div class="flex flex-col gap-1">
+                    <label for="username" class="block text-left">帳號 <span class="text-red-600">*</span></label>
+                    <input class="border border-slate-300 p-3 rounded-md" type="text" id="username" name="username" placeholder="請輸入電子郵件 或 電話號碼"  required aria-required="true">
+                </div>
+                <div class="flex flex-col gap-1">
+                    <label for="password" class="block text-left">密碼 <span class="text-red-600">*</span></label>
+                    <input class="border border-slate-300 p-3 rounded-md" type="text" id="password" name="password" placeholder="密碼(區分大小寫)" required aria-required="true">
+                    <div class="flex justify-between items-center">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue">
+                            <span>記住我</span>
+                        </label>
+                        <button data-type="" class="btn-secondary group active:bg-slate-100">
+                            <p class="gradient-text transform transition-transform duration-300 group-hover:-translate-x-1 ">忘記密碼</p>
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                            class="w-6 h-6 transform transition-transform duration-1000" viewBox="0 0 16 16">
+                            <defs>
+                                <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#21DEFF" />
+                                    <stop offset="100%" stop-color="#E17DFF" />
+                                </linearGradient>
+                            </defs>
+                            <path fill-rule="evenodd"
+                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+                            class="fill-[url(#grad)] group-hover:transition-colors duration-500" />
+ 
+                            </svg> -->
+                        </button>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-primary justify-center rounded-xl py-3 ">登入</button>
+            </form>
+            <div class="flex justify-between items-center">
+                <p>尚未成為會員？</p>
+                <button data-type="" class="btn-secondary group active:bg-slate-100">
+                    <p class="gradient-text transform transition-transform duration-300 group-hover:-translate-x-1 ">立即註冊</p>
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                    class="w-6 h-6 transform transition-transform duration-1000" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+                    class="fill-[url(#grad)] group-hover:transition-colors duration-500" />
+                    </svg> -->
+                </button>
+            </div>
+            <div class="flex flex-col gap-2">
+                <small>或</small>
+                <button type="submit" class="bg-slate-900 text-white py-3 rounded-xl hover:bg-slate-600">產品註冊</button>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="footer"></footer>
+
+
+</body>
+
+</html>
+
+
+<!-- 登入表單區塊 -->
+<!-- <section id="myDropdown" class="absolute top-full right-0 w-80 p-4 mt-2 bg-white/90 border border-white backdrop-blur rounded-lg hidden">
+    <h6 class="text-lg font-semibold mb-4">登入帳戶</h6>
+    <form class="flex flex-col space-y-3" action="#" method="POST">
+      <label for="username" class="required text-sm font-medium">帳號</label>
+      <input type="text" id="username" name="username" placeholder="請輸入電子郵件或電話號碼" required class="p-2 border rounded-md">
+
+      <label for="password" class="required text-sm font-medium">密碼</label>
+      <input type="password" id="password" name="password" placeholder="密碼(區分大小寫)" required class="p-2 border rounded-md">
+
+      <div class="flex justify-between items-center text-sm">
+        <label class="flex items-center gap-1">
+          <input type="checkbox" class="form-check-input" checked>
+          記住我
+        </label>
+        <a href="#" class="text-blue-600">忘記密碼</a>
+      </div>
+
+      <button type="submit" class="bg-black text-white py-2 rounded-md hover:bg-gray-800">登入</button>
+    </form>
+
+    <div class="text-center mt-4">
+      <p class="text-sm">尚未成為會員？</p>
+      <a href="#" class="text-blue-600 text-sm">立即註冊</a>
+    </div>
+
+    <div class="text-center mt-2">
+      <small class="block text-gray-500 mb-1">或選擇</small>
+      <button class="text-blue-600 text-sm hover:underline">產品註冊</button>
+    </div>
+  </section> -->
+
+  <!-- 
+  /* --------------member------------------ */
+.member {
+    position: relative;
+    display: inline-block;
+}
+
+.member .login-btn{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    border-style:none;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #ffffff;
+}
+
+.member .dropbtn:hover .login{
+    display: block;
+}
+/* --------------member:login------------------ */
+.login{
+    display: none;
+    position: absolute;
+    top: 115%;
+    width: 320px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #fff;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    margin-right: 0px;
+    right: 0;
+    padding: 16px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.login .required::after{
+    content: " *";
+    color: #ff2190;
+}
+
+.login.show {
+    display: block;
+}
+
+/* ----------form------------ */
+.login .form{
+    display: flex;
+    flex-direction: column;
+}
+
+.member .login h6{
+    font-weight: 500;
+    margin-bottom: 24px;
+    justify-content:center;
+}
+
+.member .login .required{
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 16px 0;
+}
+.member .login .form input{
+    font-size: 12px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+}
+.member .form-check{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+}
+.member .form-check-label{
+    font-size: 12px;
+}
+.member .form-check a{
+    font-size: 12px;
+    color: #5559FF;
+}
+
+.member form button{
+    margin-top: 32px;
+    color: #ffffff;
+    background-color: #5559FF;
+    border-radius: 4px;
+    padding: 12px;
+    border: none;
+    letter-spacing: 2px;
+}
+
+.member .signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0;
+}
+.member .signup p{
+    font-size: 12px;
+}
+.member .signup a{
+    font-size: 12px;
+    color: #5559FF;
+}
+.member .product-signup{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 24px;
+}
+.member .login .product-signup small{
+    color : #555;
+    letter-spacing : 2px;
+}
+
+.member .login .product-signup button{
+    margin-top: 16px;
+    color: #5559FF;
+    border: 1px solid #5559FF;
+    border-radius: 4px;
+    padding: 12px;
+    letter-spacing: 2px;
+    width: 100%;
+} -->
