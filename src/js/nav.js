@@ -1,12 +1,12 @@
 
 import { loadComponent } from '../main.js';
 
-loadComponent('./components/nav.html', 'nav').then(() => {
+loadComponent('/src/components/nav.html', 'nav').then(() => {
   initNav();
 });
 
 // 初始化導航欄功能
-export function initNav() {
+function initNav() {
 
     // 檢查導航欄是否存在且有內容
     const navElement = document.getElementById('nav');
@@ -67,7 +67,7 @@ export function initNav() {
     const currentPath = window.location.pathname;
 
     // 如果當前路徑是 /index.html，切換 logo 狀態
-    if (currentPath === './index.html') {
+    if (currentPath === '/index.html') {
     logo.classList.add('active');
     } 
 
@@ -81,7 +81,7 @@ export function initNav() {
 
     //「產品」按鈕的 active 狀態
     const productButton = document.querySelector('#product-dropdown-trigger > .nav-btn');
-    if (currentPath.includes('./products.html')) {
+    if (currentPath.includes('/products.html')) {
         productButton.classList.add('active');
     }
 

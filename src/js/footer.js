@@ -1,6 +1,6 @@
 import { loadComponent } from '../main.js';
 
 
-loadComponent('./components/footer.html', 'footer');
+loadComponent('/src/components/footer.html', 'footer');
 
 
