@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Altron</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./assets/icon/icon-logo-color.svg">
+
+
+    <script>
+        function showMilestone(year) {
+          // 切換內容
+          document.querySelectorAll('.milestone-content').forEach(el => el.classList.add('hidden'));
+          document.getElementById('milestone-' + year).classList.remove('hidden');
+      
+          // 切換按鈕樣式
+          document.querySelectorAll('.milestone-btn').forEach(btn => btn.classList.remove('active'));
+          document.getElementById('btn-' + year).classList.add('active');
+        }
+      
+        // 預設顯示最新年份
+        document.addEventListener('DOMContentLoaded', () => {
+            showMilestone('2025');
+            // 滑動到最後一個 slide（預設顯示最新年份）
+            setTimeout(() => {
+                timelineSwiper.slideTo(timelineSwiper.slides.length - 1);
+            }, 100);
+        });
+    </script>
+
+  <script type="module" crossorigin src="/altron-v2.1/assets/main-DuxOCBWx.js"></script>
+  <link rel="stylesheet" crossorigin href="/altron-v2.1/assets/main-D2wN92v_.css">
+</head>
+
+<body>
+    <nav id="nav"></nav>
+    
+    <!-- 1. hero -->
+    <section class="mx-auto flex flex-col text-center pb-32 relative">
+        <video class="self-stretch h-dvh relative max-w-full overflow-hidden shrink-0 object-cover z-0"
+        controls autoplay loop muted playsinline>
+            <source src="./robot-40501598.mp4" type="video/mp4">
+        您的瀏覽器不支援影片播放。
+        </video>
+        <div class="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+
+            <h3 class="text-white shadow-sm">
+                Infinite Possibilities, Seamlessly Engineered.
+            </h3>
+        </div>
+        
+    </section>
+    <!-- 2. 信念、使命、未來藍圖 -->
+    <section class="save-area mx-auto py-20">
+        <div class="self-stretch flex flex-col md:flex-row md:gap-x-14 items-start justify-start content-start">
+
+            <!-- TOC -->
+            <div class="w-60 flex flex-col justify-start gap-y-12">
+                <h2>我們的</h2>
+                <div class="flex flex-col gap-4">
+                    <div class="self-stretch border-slate-400 border-solid border-b-[1px] flex flex-row items-center justify-start pt-0.5 px-0 pb-4">
+                        <h5 class="gradient-text">信念</h5>
+                    </div>
+                    <div class="self-stretch border-slate-400 border-solid border-b-[1px] flex flex-row items-center justify-start pt-0.5 px-0 pb-4">
+                        <h5>使命</h5>
+                    </div>
+                    <div class="self-stretch border-slate-400 border-solid border-b-[1px] flex flex-row items-center justify-start pt-0.5 px-0 pb-4">
+                        <h5>未來藍圖</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- content -->
+            <div class=" w-full flex flex-col items-start justify-start gap-y-12">
+                <section class="flex flex-col items-start justify-start gap-6 text-justify">
+                    <h2>信念</h2>
+                    <p>
+                    Altron 致力於開發能與人類協作的智慧型機器人與視覺系統，讓科技不再只是工具，而是推動世界前進的關鍵夥伴。透過自主移動與感知技術的進化，我們重新定義人與科技的關係，讓自動化成為提升生活與工作的動力核心。
+                    </p>
+                </section>
+                <section class=" flex flex-col items-start justify-start gap-6 text-justify">
+                    <h2>使命</h2>
+                    <div>
+                        <p>我們相信，積極影響人類的未來，是這個世代最重要的使命。</p>
+                        <p>&nbsp;</p>
+                        <p>科技的真正價值，不在於冷冰冰的效率，而在於能否改善人類的工作與生活。當AI和機器人技術逐步成熟，我們正站在一個歷史性的轉捩點上：今天的技術選擇，將決定明日的社會樣貌。</p>
+                        <p>&nbsp;</p>
+                        <p>自 2016 年成立以來，Altron 專注於協作型機器人與智慧視覺應用的研發，將 AI 演算、機電整合與空間感知轉化為可落地的自動化解決方案。我們的目標，是打造能應對複雜真實世界的智慧機器體系，讓它們進入各個領域，從製造業、救援、農業，到人類日常生活中，解決那些危險、枯燥、或人力難以負荷的工作。這是一條長遠的旅程，需要高度專業的團隊、龐大的資源投入，以及源源不絕的創新。我們面對的是高風險與極低成功機率的挑戰，但一旦成功，將能徹底改變人類社會的運作方式。</p>
+                    </div>
+                </section>
+                <section class="flex flex-col items-start justify-start gap-6 text-justify">
+                    <h2>未來藍圖</h2>
+                    <div>
+                        <p>我們將 AI 智能整合至以下核心產品系統：</p>
+                        <p>&nbsp;</p>
+                        <ul>
+                            <li>HAC 自主移動人形機器人：具備動態平衡與空間感知能力，適應多變場域</li>
+                            <li>HRC 協作人形機器人：設計以人機協同為主，執行中等複雜度工作任務</li>
+                            <li>CAB 自主移動仿生機器：適用於不規則或野外地形的多足載具</li>
+                            <li>ARM 智能機械手臂：搭載 6 軸力覺感測與視覺引導，實現高精度操作</li>
+                        </ul>
+                        <p>&nbsp;</p>
+                        <p>Altron 將持續開發能與人類共生的智慧機器，不參與軍事或傷害性任務，而是專注於補足人力短缺、改善作業條件，推動人類社會往更永續、更人性化的方向前進。提高生產效率，並普及更高品質的生活水準。未來的經濟不再完全依賴勞力驅動，而是與智能機器協作共生 </p>
+                        <p>&nbsp;</p>
+                        <p>長遠來看，機器人甚至有能力協助製造下一代機器人。當人工勞動變得「可選擇」，我們將擁有更自由的生活型態，更豐富的物質條件，以及追求意義與創造力的空間。</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+    <!-- 1. 全球銷售區域 -->
+    <!-- <section class="w-full h-[600px] bg-black">
+        <div id="globe" class="w-full h-full"></div>
+    </section> -->
+
+    <!-- 2. 里程碑 -->
+    <section class="bg-white ">
+        <div class="save-area max-w-6xl mx-auto py-20 flex flex-col gap-y-10 items-center justify-center">
+            
+            <h2 class="self-stretch text-center ">我們的里程碑</h2>
+
+            <!-- 內容區 -->
+            <div class="milestone-content-wrap ">
+
+                <!-- 2019 -->
+                <div id="milestone-2019" class="milestone-content hidden">
+                    <div class="flex flex-col-reverse md:flex-row gap-6 items-start">
+                        <div>
+                            <h3 class="font-mono">2019</h3>
+                            <p  class="font-bold">Altron Lab 自主研發中心成立</p>
+                            <p>於新竹設立 Altron Lab，投入強化機器學習演算法、動態導航與協作規劃模組，強化跨部門機構測試與場景模擬能力。</p>
+                            <div>
+                                <p>重要事件：</p>
+                                <p>• 啟動軟體平台整合計畫，開發跨裝置控制協作架構原型</p>
+                                <p>• 展開 HAC 與 CAB 系列前期概念設計</p>
+                            </div>
+                            
+                        </div>
+                        <img src="./assets/img/milestone-2019.jpg" alt="2019圖" class="w-full rounded-lg">
+
+                    </div>
+                </div>
+
+                <!-- 2020 -->
+                <div id="milestone-2020" class="milestone-content hidden">
+                    <div class="flex flex-col-reverse md:flex-row gap-6 items-start">
+                        <div>
+                            <h3 class="font-mono">2020</h3>
+                            <p  class="font-bold">Altron Lab 自主研發中心成立</p>
+                            <p>於新竹設立 Altron Lab，投入強化機器學習演算法、動態導航與協作規劃模組，強化跨部門機構測試與場景模擬能力。</p>
+                            <div>
+                                <p>重要事件：</p>
+                                <p>• 啟動軟體平台整合計畫，開發跨裝置控制協作架構原型</p>
+                                <p>• 展開 HAC 與 CAB 系列前期概念設計</p>
+                            </div>
+                            
+                        </div>
+                        <img src="./assets/img/milestone-2020.jpg" alt="2020圖" class="w-full rounded-lg">
+
+                    </div>
+                </div>
+
+                <div id="milestone-2021" class="milestone-content hidden">
+                    <div class="flex flex-col md:flex-row gap-6 items-start">
+                        <div class="flex flex-col-reverse justify-between space-y-2">
+                            <h3 class="font-mono">2021</h3>
+                            <p  class="font-bold">開發智慧視覺系統 VISION-X</p>
+                            <p>內部開發自主影像辨識系統，整合深度學習演算法與 3D 感知模組，可支援多工位自動檢測、物體追蹤與空間定位。</p>
+                            <div>
+                                <p>重要事件：</p>
+                                <p>• 7 月參加美國 IMTS 工業自動化大展，正式進軍北美市場</p>
+                                <p>• 首度發表 TM5 協作型機器手臂</p>
+                            </div>
+                        </div>
+                        <img src="./assets/img/milestone-2021.jpg" alt="2021圖" class="w-full rounded-lg">
+                    </div>
+                </div>
+
+                <div id="milestone-2022" class="milestone-content hidden">
+                    <div class="flex flex-col-reverse md:flex-row gap-6 items-start">
+                        <div class="flex flex-col justify-between space-y-2">
+                            <h3 class="font-mono">2022</h3>
+                            <p class="font-bold">與製造業領導品牌簽署合作備忘錄 (MOU)</p>
+                            <p>攜手亞洲多家 Tier 1 製造與物流企業，導入 HRC 協作機器人於高精密製造與包裝線，提高效率與人機協同密度。</p>
+                            <div>
+                                <p>重要事件：</p>
+                                <ul>
+                                    <li>• 實際部署 20+ 台 HRC 系列協作機器於先進組裝線</li>
+                                    <li>• 成立亞太技術應用服務部門，推動技術落地</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <img src="./assets/img/milestone-2022.jpg" alt="2022圖" class="w-full rounded-lg">
+
+                    </div>
+                </div>
+            
+                <div id="milestone-2023" class="milestone-content hidden">
+                    <div class="flex flex-col-reverse md:flex-row gap-6 items-start">
+                        <div class="flex flex-col justify-between space-y-2">
+                            <h3 class="font-mono ">2023</h3>
+                            <p class="font-bold">推出 Altron OS：統一機器人控制架構</p>
+                            <p>整合所有產品控制模組與 API 的作業核心系統 Altron OS 正式問世，支援多機協同、任務編排、遠端監控與 OTA 升級。</p>
+                        </div>
+                        <img src="./assets/img/milestone-2023.jpg" alt="2023圖" class="w-full md:w-1/2 rounded-lg ">
+                    </div>
+                </div>
+            
+                <div id="milestone-2024" class="milestone-content hidden">
+                    <div class="flex flex-col-reverse md:flex-row gap-6 items-start">
+                        <div class="flex flex-col justify-between space-y-2">
+                            <h3 class="font-mono ">2024</h3>
+                            <p class="font-bold">Altron 智能機械手臂 ARM 量產化完成</p>
+                            <p>6 軸力覺感測與 RGB-D 視覺引導整合的 ARM 系列機械手臂開發，具備細膩操作能力，開始進入半導體與醫材產線並取得多項 CE 與 ISO 安全認證首度導入進行醫療器械微組裝任務。</p>
+                        </div>
+                        <img src="./assets/img/milestone-2024.jpg" alt="2024圖" class="w-full md:w-1/2 rounded-lg">
+                    </div>
+                </div>
+            
+                <div id="milestone-2025" class="milestone-content flex">
+                    <div class="flex flex-col-reverse md:flex-row gap-6 items-start">
+                        <div class="flex flex-col justify-between space-y-2">
+                            <h3 class="font-mono ">2025</h3>
+                            <p class="font-bold">AI 驅動的泛用型協作機器人平台亮相</p>
+                            <p>Altron 即將發表新一代 HRC Pro 人形協作平台，整合生成式 AI 與多模態感知，可因應更多元的人類語境、動作與情境應對。目標跨足製造、倉儲、農業、醫療與城市服務場域，邁向泛用型人形機器人技術的新時代。</p>
+                        </div>
+                        <img src="./assets/img/milestone-2025.jpg" alt="2025圖" class="w-full md:w-1/2 rounded-lg">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- timeline Swiper -->
+            <div class="swiper timeline-swiper relative z-10 flex w-4/5 px-6 mt-16 mb-10 gap-4">
+                <!-- 軸線 -->
+                <div class="absolute top-3/4 left-0 right-0 border border-solid border-slate-400  border-b-[0.1px] z-0"></div>
+
+                <div class="swiper-wrapper justify-content flex-end">
+                    <div class="swiper-slide  w-auto text-center">
+                        <button id="btn-2019" class="milestone-btn group relative text-slate-400" onclick="showMilestone('2019')">2019
+                            <span class="dot block w-3 h-3 rounded-full mx-auto mt-2 bg-slate-400"></span>
+                        </button>
+                    </div>
+                    <div class="swiper-slide  w-auto text-center">
+                        <button id="btn-2020" class="milestone-btn group relative text-slate-400" onclick="showMilestone('2020')">2020
+                            <span class="dot block w-3 h-3 rounded-full mx-auto mt-2 bg-slate-400"></span>
+                        </button>
+                    </div>
+                    <div class="swiper-slide  w-auto text-center">
+                        <button id="btn-2021" class="milestone-btn group relative text-slate-400" onclick="showMilestone('2021')">2021
+                            <span class="dot block w-3 h-3 rounded-full mx-auto mt-2 bg-slate-400"></span>
+                        </button>
+                    </div>
+                    <div class="swiper-slide  w-auto text-center">
+                        <button id="btn-2022" class="milestone-btn group relative text-slate-400" onclick="showMilestone('2022')">2022
+                            <span class="dot block w-3 h-3 rounded-full mx-auto mt-2 bg-slate-400"></span>
+                        </button>
+                    </div>
+                    <div class="swiper-slide  w-auto text-center">
+                        <button id="btn-2023" class="milestone-btn group relative text-slate-400" onclick="showMilestone('2023')">2023
+                            <span class="dot block w-3 h-3 rounded-full mx-auto mt-2 bg-slate-400"></span>
+                        </button>
+                    </div>
+                    <div class="swiper-slide  w-auto text-center">
+                        <button id="btn-2024" class="milestone-btn group relative text-slate-400" onclick="showMilestone('2024')">2024
+                            <span class="dot block w-3 h-3 rounded-full mx-auto mt-2 bg-slate-400"></span>
+                        </button>
+                    </div>
+                    <div class="swiper-slide w-auto text-center">
+                        <button id="btn-2025" class="milestone-btn group relative text-slate-400" onclick="showMilestone('2025')">2025
+                            <span class="dot block w-3 h-3 rounded-full mx-auto mt-2 bg-slate-400"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. 團隊介紹 -->
+    <!-- title -->
+    <div class="text-center space-y-6 py-20">
+        <h2>核心團隊</h2>
+        <div class="flex items-center justify-center">
+            <p>我們正在尋找熱愛技術、勇於創新的你。</p>
+            <button data-type=""
+            class="btn-secondary group active:bg-slate-100">
+                <p class="gradient-text transform transition-transform duration-300 group-hover:-translate-x-1 ">加入我們</p>
+                <svg class="w-5 h-5 transform transition-transform duration-1000 group-hover:rotate-[360deg]"
+                    viewBox="0 0 20 20" fill="url(#grad)" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#21DEFF" />
+                        <stop offset="100%" stop-color="#E17DFF" />
+                    </linearGradient>
+                    </defs>
+                    <path d="M10 0L12.3335 7.66655L20 10L12.3335 12.3335L10 20L7.66655 12.3335L0 10L7.66655 7.66655L10 0Z"
+                    fill="currentColor" class="fill-[url(#grad)] group-hover: transition-colors duration-500" />
+                </svg>
+            </button>
+            
+        </div>
+    </div>
+
+    <!-- 團隊成員 -->
+    <div class=" team-swiper relative mx-auto overflow-hidden mb-20">
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination "></div>
+
+        <div class="swiper-wrapper save-area pb-20">
+            <section
+            class="swiper-slide !w-80 rounded-3xl bg-white overflow-hidden shrink-0 flex flex-col items-end justify-start text-left">
+
+                <img
+                class="self-stretch w-full relative rounded-3xl overflow-hidden shrink-0 object-cover aspect-square"
+                loading="lazy"
+                alt=""
+                src="./assets/img/team1.jpg"/>
+
+                <div
+                class="self-stretch flex flex-col items-start justify-start p-4 space-y-1">
+                    <h5 class="font-bold">王柏仁</h5>
+                    <p>創辦人暨執行長</p>
+                </div>
+            </section>
+            <section
+            class="swiper-slide !w-80 rounded-3xl bg-white overflow-hidden shrink-0 flex flex-col items-end justify-start text-left">
+                <img
+                class="self-stretch w-full relative rounded-3xl max-w-full overflow-hidden shrink-0 object-cover"
+                loading="lazy"
+                alt=""
+                src="./assets/img/team2.jpg"/>
+
+                <div
+                class="self-stretch flex flex-col items-start justify-start p-4 space-y-1">
+                    <h5 class="font-bold">林欣潔</h5>
+                    <p>技術長</p>
+                </div>
+            </section>
+            <section
+            class="swiper-slide !w-80 rounded-3xl bg-white overflow-hidden shrink-0 flex flex-col items-end justify-start text-left">
+                <img
+                class="self-stretch w-full relative rounded-3xl max-w-full overflow-hidden shrink-0 object-cover"
+                loading="lazy"
+                alt=""
+                src="./assets/img/team3.jpg"/>
+
+                <div
+                class="self-stretch flex flex-col items-start justify-start py-[0rem] pl-[1.5rem] pr-[1.25rem]">
+                    <div
+                    class="self-stretch flex flex-col items-start justify-start p-4 space-y-1">
+                        <h5 class="font-bold">季建宇</h5>
+                        <p>產品總監</p>
+                    </div>
+                </div>
+            </section>
+            <section
+            class="swiper-slide !w-80 rounded-3xl bg-white overflow-hidden shrink-0 flex flex-col items-end justify-start text-left">
+                <img
+                class="self-stretch w-full relative rounded-3xl max-w-full overflow-hidden shrink-0 object-cover"
+                loading="lazy"
+                alt=""
+                src="./assets/img/team4.jpg"/>
+
+                <div
+                class="self-stretch flex flex-col items-start justify-start py-[0rem] pl-[1.5rem] pr-[1.25rem]">
+                    <div
+                    class="self-stretch flex flex-col items-start justify-start p-4 space-y-1">
+                        <h5 class="font-bold">周君君</h5>
+                        <p>營運長</p>
+                    </div>
+                </div>
+            </section>
+            <section
+            class="swiper-slide !w-80 rounded-3xl bg-white overflow-hidden shrink-0 flex flex-col items-end justify-start text-left">
+                <img
+                class="self-stretch w-full relative rounded-3xl max-w-full overflow-hidden shrink-0 object-cover"
+                loading="lazy"
+                alt=""
+                src="./assets/img/team5.jpg"/>
+
+                <div
+                class="self-stretch flex flex-col items-start justify-start py-[0rem] pl-[1.5rem] pr-[1.25rem]">
+                    <div
+                    class="self-stretch flex flex-col items-start justify-start p-4 space-y-1">
+                        <h5 class="font-bold">洪凱文</h5>
+                        <p>AI 研發中心主任</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    
+    <footer id="footer" ></footer>
+
+</body>
+
+</html>

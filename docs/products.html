@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Altron</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./assets/icon/icon-logo-color.svg">
+
+
+  <script type="module" crossorigin src="/altron-v2.1/assets/main-DuxOCBWx.js"></script>
+  <link rel="stylesheet" crossorigin href="/altron-v2.1/assets/main-D2wN92v_.css">
+</head>
+
+<body>
+    <nav id="nav"></nav>
+    <!-- Hero -->
+    <section class="relative ">
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center z-10 space-y-6">
+            <h4 class="text-white">CAB</h4>
+            <h1 class="text-white">超越地形限制，為任務而生</h1>
+        </div>
+
+        <div class="hero-swiper  h-screen overflow-hidden flex items-center relative justify-center z-0">
+            <div class="absolute inset-0 bg-black/40 z-10 pointer-events-none"></div>
+
+            <div class="swiper-wrapper save-area flex absolute w-full h-full object-cover object-[75%-25%] md:object-center z-0">
+                <div class="swiper-slide">
+                    <img src="./assets/img/product-kv01.jpg" alt="" class="h-full w-full object-cover"/>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/img/product-kv02.jpg" alt="" class="h-full w-full object-cover"/>
+                </div>
+                <!-- <div class="swiper-slide">
+                    <img src="/img/product-swiper03.jpg" alt="" class="h-full w-full object-cover"/>
+                </div> -->
+            </div>
+            <!-- Pagination Dots -->
+            <div class="swiper-pagination absolute bottom-8 left-1/2 -translate-x-1/2 z-50"></div>
+
+            <div class="autoplay-progress absolute right-4 bottom-4 w-12 h-12 z-50 text-white flex items-center justify-center">
+                <svg viewBox="0 0 48 48" class="absolute top-0 left-0 w-full h-full -rotate-90">
+                    <circle cx="24" cy="24" r="20" class="fill-none stroke-white opacity-30 stroke-[4]" />
+                    <circle cx="24" cy="24" r="20" 
+                        class="fill-none stroke-white stroke-[4] transition-[stroke-dashoffset] duration-200 ease-linear"
+                        style="stroke-dasharray: 125.6; stroke-dashoffset: 0;" />
+                </svg>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- 產品特點 -->
+    <section class="save-area mx-auto py-24 bg-white space-y-20">
+        <div class="product-features flex flex-col md:flex-row items-center gap-10 w-full">
+            <div class="flex flex-col justify-between md:basis-1/2 space-y-4">
+                <h2>卓越的地形適應力</h2>
+                <p>行進過程中運用 模型預測控制（MPC）演算法，即時預測接下來幾步的運動狀態。系統會根據地面摩擦力、重心移動、腳部著地點等參數，自動調整下一步的步態與施力方式，使它能靈活應對突如其來的外力干擾或地形變化，例如滑倒、踢擊或坡道起伏。</p>
+                <div class="flex flex-col gap-2">
+                    <div class="flex justify-start items-center gap-2 p-1 rounded-full border border-solid border-slate-100">
+                        <div class="h-8 w-8 flex justify-center items-center bg-slate-100 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-crosshair" viewBox="0 0 16 16">
+                            <path d="M8.5.5a.5.5 0 0 0-1 0v.518A7 7 0 0 0 1.018 7.5H.5a.5.5 0 0 0 0 1h.518A7 7 0 0 0 7.5 14.982v.518a.5.5 0 0 0 1 0v-.518A7 7 0 0 0 14.982 8.5h.518a.5.5 0 0 0 0-1h-.518A7 7 0 0 0 8.5 1.018zm-6.48 7A6 6 0 0 1 7.5 2.02v.48a.5.5 0 0 0 1 0v-.48a6 6 0 0 1 5.48 5.48h-.48a.5.5 0 0 0 0 1h.48a6 6 0 0 1-5.48 5.48v-.48a.5.5 0 0 0-1 0v.48A6 6 0 0 1 2.02 8.5h.48a.5.5 0 0 0 0-1zM8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+                            </svg>
+                        </div>
+                        <p>模型預測控制（Model Predictive Control, MPC）</p>
+                    </div>
+                    <div class="flex justify-start items-center gap-2 p-1 rounded-full border border-solid border-slate-100">
+                        <div class="h-8 w-8 flex justify-center items-center bg-slate-100 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-universal-access" viewBox="0 0 16 16">
+                            <path d="M9.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0M6 5.5l-4.535-.442A.531.531 0 0 1 1.531 4H14.47a.531.531 0 0 1 .066 1.058L10 5.5V9l.452 6.42a.535.535 0 0 1-1.053.174L8.243 9.97c-.064-.252-.422-.252-.486 0l-1.156 5.624a.535.535 0 0 1-1.053-.174L6 9z"/>
+                            </svg>
+                        </div>
+                        <p>全身動態控制（Whole-Body Control, WBC）</p>
+                    </div>
+                    <div class="flex justify-start items-center gap-2 p-1 rounded-full border border-solid border-slate-100">
+                        <div class="h-8 w-8 flex justify-center items-center bg-slate-100 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-camera-video-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2z"/>
+                            </svg>
+                        </div>
+                        <p>攝影機與 3D 立體視覺感測</p>
+                    </div>
+                    <div class="flex justify-start items-center gap-2 p-1 rounded-full border border-solid border-slate-100">
+                        <div class="h-8 w-8 flex justify-center items-center bg-slate-100 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-sliders2-vertical" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M0 10.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1H3V1.5a.5.5 0 0 0-1 0V10H.5a.5.5 0 0 0-.5.5M2.5 12a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 1 0v-2a.5.5 0 0 0-.5-.5m3-6.5A.5.5 0 0 0 6 6h1.5v8.5a.5.5 0 0 0 1 0V6H10a.5.5 0 0 0 0-1H6a.5.5 0 0 0-.5.5M8 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 1 0v-2A.5.5 0 0 0 8 1m3 9.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1H14V1.5a.5.5 0 0 0-1 0V10h-1.5a.5.5 0 0 0-.5.5m2.5 1.5a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 1 0v-2a.5.5 0 0 0-.5-.5"/>
+                            </svg>
+                        </div>
+                        <p>動態姿態調整（Active Posture Compensation）</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:basis-1/2 object-cover h-full ">
+                <img src="./assets/img/3d-biorobots-1.jpg" alt="" class="rounded-3xl">
+            </div>
+        </div>
+
+        <div class="product-features flex flex-col-reverse md:flex-row items-center gap-10 w-full">
+            <div class="md:basis-1/2 object-cover h-full ">
+                <img src="./assets/img/3d-biorobots-2.jpg" alt="" class="rounded-3xl">
+            </div>
+            <div class="flex flex-col justify-between md:basis-1/2 space-y-4">
+                <h2>自主導航與感知能力</h2>
+                <p>搭載SLAM 技術、360° LiDAR 掃描 及 深度攝影機，具備先進的環境感知與導航能力，以實現：</p>
+                <div class="flex flex-col gap-2">
+                    <div class="flex justify-start items-center gap-2 p-1 rounded-full border border-solid border-slate-100">
+                        <div class="h-8 w-8 flex justify-center items-center bg-slate-100 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-broadcast-pin" viewBox="0 0 16 16">
+                            <path d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707m2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708m5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708m2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM6 8a2 2 0 1 1 2.5 1.937V15.5a.5.5 0 0 1-1 0V9.937A2 2 0 0 1 6 8"/>
+                            </svg>
+                        </div>
+                        <p>自動巡查設備或建築環境，蒐集數據</p>
+                    </div>
+                    <div class="flex justify-start items-center gap-2 p-1 rounded-full border border-solid border-slate-100">
+                        <div class="h-8 w-8 flex justify-center items-center bg-slate-100 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrows-move" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10M.146 8.354a.5.5 0 0 1 0-.708l2-2a.5.5 0 1 1 .708.708L1.707 7.5H5.5a.5.5 0 0 1 0 1H1.707l1.147 1.146a.5.5 0 0 1-.708.708zM10 8a.5.5 0 0 1 .5-.5h3.793l-1.147-1.146a.5.5 0 0 1 .708-.708l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L14.293 8.5H10.5A.5.5 0 0 1 10 8"/>
+                            </svg>
+                        </div>
+                        <p>即時辨識障礙物，靈活調整路徑避免碰撞</p>
+                    </div>
+                    <div class="flex justify-start items-center gap-2 p-1 rounded-full border border-solid border-slate-100">
+                        <div class="h-8 w-8 flex justify-center items-center bg-slate-100 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bezier" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M0 10.5A1.5 1.5 0 0 1 1.5 9h1A1.5 1.5 0 0 1 4 10.5v1A1.5 1.5 0 0 1 2.5 13h-1A1.5 1.5 0 0 1 0 11.5zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm10.5.5A1.5 1.5 0 0 1 13.5 9h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM6 4.5A1.5 1.5 0 0 1 7.5 3h1A1.5 1.5 0 0 1 10 4.5v1A1.5 1.5 0 0 1 8.5 7h-1A1.5 1.5 0 0 1 6 5.5zM7.5 4a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
+                            <path d="M6 4.5H1.866a1 1 0 1 0 0 1h2.668A6.52 6.52 0 0 0 1.814 9H2.5q.186 0 .358.043a5.52 5.52 0 0 1 3.185-3.185A1.5 1.5 0 0 1 6 5.5zm3.957 1.358A1.5 1.5 0 0 0 10 5.5v-1h4.134a1 1 0 1 1 0 1h-2.668a6.52 6.52 0 0 1 2.72 3.5H13.5q-.185 0-.358.043a5.52 5.52 0 0 0-3.185-3.185"/>
+                            </svg>
+                        </div>
+                        <p>自訂路徑任務執行</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-features flex flex-col md:flex-row items-center gap-10 w-full h-2/3">
+            <div class="flex flex-col justify-between md:basis-1/2 space-y-4">
+                <h2>高規格工業環境適用性</h2>
+                <p>行進過程中運用 模型預測控制（MPC）演算法，即時預測接下來幾步的運動狀態。系統會根據地面摩擦力、重心移動、腳部著地點等參數，自動調整下一步的步態與施力方式，使它能靈活應對突如其來的外力干擾或地形變化，例如滑倒、踢擊或坡道起伏。</p>
+                <div class="flex flex-col gap-2">
+                    <div class="flex justify-start items-center gap-2 p-1 rounded-full border border-solid border-slate-100">
+                        <div class="h-8 w-8 flex justify-center items-center bg-slate-100 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" filㄋl="currentColor" class="bi bi-shield-fill-check" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.8 11.8 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7 7 0 0 0 1.048-.625 11.8 11.8 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.54 1.54 0 0 0-1.044-1.263 63 63 0 0 0-2.887-.87C9.843.266 8.69 0 8 0m2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793z"/>
+                            </svg>
+                        </div>
+                        <p>IP54防護等級</p>
+                    </div>
+                    <div class="flex justify-start items-center gap-2 p-1 rounded-full border border-solid border-slate-100">
+                        <div class="h-8 w-8 flex justify-center items-center bg-slate-100 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-battery-full" viewBox="0 0 16 16">
+                            <path d="M2 6h10v4H2z"/>
+                            <path d="M2 4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm10 1a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm4 3a1.5 1.5 0 0 1-1.5 1.5v-3A1.5 1.5 0 0 1 16 8"/>
+                            </svg>
+                        </div>
+                        <p>24續航操作小時</p>
+                    </div>
+                    <div class="flex justify-start items-center gap-2 p-1 rounded-full border border-solid border-slate-100">
+                        <div class="h-8 w-8 flex justify-center items-center bg-slate-100 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-thermometer-half" viewBox="0 0 16 16">
+                            <path d="M9.5 12.5a1.5 1.5 0 1 1-2-1.415V6.5a.5.5 0 0 1 1 0v4.585a1.5 1.5 0 0 1 1 1.415"/>
+                            <path d="M5.5 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0zM8 1a1.5 1.5 0 0 0-1.5 1.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0l-.166-.15V2.5A1.5 1.5 0 0 0 8 1"/>
+                            </svg>
+                        </div>
+                        <p>-20°C ~ 45°C 運作溫度範圍</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:basis-1/2 object-cover h-full ">
+                <img src="./assets/img/3d-biorobots-3.jpg" alt="" class="rounded-3xl">
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer"></footer>
+
+</body>
+
+</html>
